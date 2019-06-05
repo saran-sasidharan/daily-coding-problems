@@ -15,7 +15,7 @@ compile instruction: g++ -std=c++11 5.cpp
 
 bool checkSumExist(const std::vector<int>& array, int k)
 {
-    std::set<int> expected_values;
+    std::set<int> expected_values = {};
     for (auto value: array)
     {
         if (expected_values.find(value) != expected_values.end())
